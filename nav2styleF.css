@@ -1,0 +1,187 @@
+*, *::before, *::after {
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+	font-family: 'DM Sans',sans-serif;
+	font-size: 12px;
+}
+
+.nav-container{
+	display: grid;
+	grid-template-columns: 5.5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5.5%;
+	grid-gap: 5px;
+	padding: 10px;
+	background-color: #2b3541;
+	 justify-content: space-between;
+}
+
+.nav-container > div{
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+.nav-logo{
+	grid-column: 2 / span 2;
+}
+
+.dropdown-menu{
+	grid-column: 4 / span 2;
+}
+
+.searchBar{
+	grid-column: 7 / span 5;
+}
+
+.login-btn{
+	grid-column: 13/ span 1;
+}
+
+.signup-btn{
+	grid-column: 14 / span 2;
+}
+
+
+/*LoginButtons*/
+.btn-login{
+
+  background-color: #2b3541; 
+  border: 1px solid gray;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+
+
+}
+.btn-login:hover {
+  background-color: gray;
+  border: none;
+  color: white;
+}
+
+/*signupButton*/
+
+.btn-signup{
+  background-color: #57a3f9; 
+  border: 0px solid white;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius: 6px;
+
+}
+.btn-signup:hover {
+	background-color: #007BFF;
+}
+
+/*dropDown*/
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    }
+
+.dropdown-pointer{
+	margin: auto;
+	margin-left: 10px;
+	/*padding-top: 200px;*/ 
+}
+.button-dropdown-toggle {
+    display: inline-block;
+     border-radius: 3px 3px 3px 3px;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .675rem .75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 30px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*searchBar*/
+input[type="search"] {
+    border-radius: 3px 0px 0px 3px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.6rem 0.75rem;
+    border: none;
+    font-size: 1.1rem;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 40px;
+    margin: auto;
+    float: right;
+}
+
+.search-btn {
+ 	
+    height: 40px;
+}
+button {
+	flex: 1 0 14px;
+    border: none;
+    
+    border-radius: 0px 3px 3px 0px;
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+}
+.search-form{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 40px;
+
+}
+
+/*dropDown*/
+/*.dropdown-menu ul{
+	margin-top: 2%;
+	display: none;
+}
+.dropdown-menu ul li{
+	width: 170px;
+	border: 1px solid #fff;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	position: relative;
+
+}
+.dropdown-menu ul :hover >li{
+	display: block;
+
+}*/
